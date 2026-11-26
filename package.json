@@ -1,0 +1,48 @@
+{
+  "name": "shopify-expiring-token-helper",
+  "version": "0.1.0",
+  "description": "Per-shop locked refresh and legacy-token migration for Shopify expiring offline access tokens, built on the React Router app template's session storage.",
+  "license": "MIT",
+  "author": "Quantdesk Pvt Ltd",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "shopify",
+    "shopify-app",
+    "oauth",
+    "refresh-token",
+    "react-router"
+  ],
+  "peerDependencies": {
+    "@shopify/shopify-api": "^15.1.0",
+    "@shopify/shopify-app-session-storage": "^7.0.0"
+  },
+  "devDependencies": {
+    "@shopify/shopify-api": "^15.1.2",
+    "@shopify/shopify-app-session-storage": "^7.0.4",
+    "@shopify/shopify-app-session-storage-memory": "^8.0.4",
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  }
+}
